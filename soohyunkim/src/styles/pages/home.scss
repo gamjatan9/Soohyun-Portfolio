@@ -1,0 +1,21 @@
+.home-name {
+  @include center-fixed;
+  @include flexbox;
+  flex-direction: column;
+}
+
+.home-title {
+  font-family: $font-title;
+  color: $text;
+  font-size: 8vw;
+  white-space: nowrap;
+}
+
+.home-frontend {
+  font-family: $font-title;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke-width: 0.2vw;
+  -webkit-text-stroke-color: $text;
+  font-size: 6vw;
+}
