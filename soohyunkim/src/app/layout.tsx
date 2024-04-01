@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import '@/styles/main.scss'
+import Menu from '@/components/Menu'
 
 export const metadata: Metadata = {
   title: '김수현 포트폴리오',
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Menu />
+        {children}
+      </body>
     </html>
   )
 }

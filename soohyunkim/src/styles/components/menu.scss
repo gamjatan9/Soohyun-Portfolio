@@ -1,0 +1,31 @@
+.menu-bar {
+  @include flexbox(between, center);
+  padding: 2em;
+
+  font-size: 15px;
+  font-weight: 400;
+
+  z-index: 1;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  background: $text;
+  color: $background;
+  z-index: 2;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0);
+  margin: 0;
+}
+
+.menu-link-item {
+  width: max-content;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.menu-link-item-holder {
+  position: relative;
+}
