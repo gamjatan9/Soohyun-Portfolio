@@ -7,10 +7,10 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 
 const menuLinks = [
-  { path: '/', label: 'Home' },
-  { path: '/about', label: 'About' },
-  { path: '/projects', label: 'Projects' },
-  { path: '/contact', label: 'Contact' },
+  { path: '/', label: 'HOME' },
+  { path: '/about', label: 'ABOUT' },
+  { path: '/projects', label: 'PROJECTS' },
+  { path: '/contact', label: 'CONTACT' },
 ];
 
 export default function Menu() {
@@ -24,7 +24,7 @@ export default function Menu() {
 
   useGSAP(
     () => {
-      gsap.set('.menu-link-item-holder', { y: 75 });
+      gsap.set('.menu-link-item-holder', { y: 150 });
 
       tl.current = gsap
         .timeline({ paused: true })
@@ -55,17 +55,17 @@ export default function Menu() {
   return (
     <div className="menu-container" ref={container}>
       <div className="menu-bar">
-        <Link href="/">
+        <div className="menu-name">
           <p>SoohyunKim Frontend</p>
           <p>Portfolio 2024</p>
-        </Link>
-        <button className="menu-open">
+        </div>
+        <button className="menu-btn">
           <MenuBtn onClick={toggleMenu} />
         </button>
       </div>
       <div className="menu-overlay">
         <div className="menu-bar">
-          <Link href="/">
+          <Link href="/" onClick={toggleMenu}>
             <p>SoohyunKim Frontend</p>
             <p>Portfolio 2024</p>
           </Link>
@@ -73,7 +73,6 @@ export default function Menu() {
             X
           </button>
         </div>
-
         <div className="menu-links">
           {menuLinks.map((link, index) => (
             <div className="menu-link-item" key={index}>
