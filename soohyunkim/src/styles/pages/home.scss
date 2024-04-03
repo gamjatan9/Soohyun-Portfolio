@@ -19,3 +19,29 @@
   -webkit-text-stroke-color: $text;
   font-size: 6vw;
 }
+
+.container.fade-in {
+  animation: fadeIn 1s;
+}
+
+.container.fade-out {
+  animation: fadeOut 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
