@@ -1,0 +1,23 @@
+.contact-back {
+  width: 100dvw;
+  height: calc(100vh - 12rem);
+  padding: 0rem 3rem;
+}
+
+.contact-container {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: $background;
+  border-radius: 1rem;
+  border: 10px solid $text;
+  padding: 10px;
+}
+
+.contact-title {
+  display: absolute;
+  margin-top: 160px;
+  margin-bottom: 60px;
+  font-family: $font-title;
+  font-size: 6vw;
+}
