@@ -2,3 +2,18 @@ body {
   background-color: $background;
   color: $text;
 }
+
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* 클릭 이벤트 방해 방지 */
+  z-index: 1000;
+}
+
+.pointer:hover .cursor {
+  background-color: red; /* .pointer 요소 위에서 커서 색상 변경 */
+}

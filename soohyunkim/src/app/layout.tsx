@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import '@/styles/main.scss';
 import Menu from '@/components/Menu';
+import CustomCursor from '@/components/CustomCursor';
 
 export const metadata: Metadata = {
   title: '김수현 포트폴리오',
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <CustomCursor />
         <Menu />
         {children}
       </body>
