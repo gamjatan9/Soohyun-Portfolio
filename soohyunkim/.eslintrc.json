@@ -1,6 +1,14 @@
 {
-  "extends": ["next/core-web-vitals", "plugin:storybook/recommended"],
-  "plugins": ["eslint-plugin-simple-import-sort", "unused-imports"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:storybook/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "eslint-plugin-simple-import-sort",
+    "unused-imports",
+    "@typescript-eslint"
+  ],
   "rules": {
     "react/no-unescaped-entities": "off",
     "@next/next/no-page-custom-font": "off",
