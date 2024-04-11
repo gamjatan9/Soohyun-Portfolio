@@ -36,5 +36,37 @@
     border-radius: 10em;
     padding: 10px 50px;
     margin-right: 30px;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    white-space: nowrap;
+    cursor: pointer;
+
+    .text {
+      visibility: visible;
+    }
+
+    .text-hover {
+      visibility: hidden;
+      position: absolute;
+    }
+
+    &:hover {
+      background-color: $text;
+      color: $background;
+
+      .phone-text {
+        visibility: hidden;
+      }
+
+      .phone-number {
+        visibility: visible;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
   }
 }
