@@ -1,0 +1,16 @@
+.about {
+  display: absolute;
+  width: 100dvw;
+  height: 100dvh;
+  padding: 7rem 3rem;
+}
+
+.my-picture {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 480px;
+  background: url('/images/me.JPG') #e0e0e0 60% / cover no-repeat;
+  background-size: 90%;
+  box-shadow: 3px 7px 10px 0px rgba(123, 121, 121, 0.2);
+}

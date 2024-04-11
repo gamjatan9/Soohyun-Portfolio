@@ -1,0 +1,23 @@
+.side-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); // 투명 검정 배경
+}
+
+.side-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  height: 100vh;
+  background-color: $blue;
+
+  display: flex;
+  flex-direction: column;
+
+  .close {
+  }
+}

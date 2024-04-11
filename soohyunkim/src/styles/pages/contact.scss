@@ -1,23 +1,40 @@
-.contact-back {
+.contact {
   width: 100dvw;
-  height: calc(100vh - 12rem);
-  padding: 0rem 3rem;
-}
+  height: 100dvh;
+  padding: 7rem 3rem 5rem 3rem;
 
-.contact-container {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  background-color: $background;
-  border-radius: 1rem;
-  border: 10px solid $text;
-  padding: 10px;
-}
+  .container {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: $background;
+    border-radius: 1rem;
+    border: 10px solid $text;
+    padding: 10px;
+  }
 
-.contact-title {
-  display: absolute;
-  margin-top: 160px;
-  margin-bottom: 60px;
-  font-family: $font-title;
-  font-size: 6vw;
+  .title {
+    display: absolute;
+    margin-top: 160px;
+    margin-bottom: 60px;
+    font-family: $font-title;
+    font-size: 6vw;
+  }
+
+  .send-email {
+    margin-bottom: 15px;
+  }
+
+  .more {
+    display: flex;
+    justify-content: center;
+    margin-top: 23vh;
+  }
+
+  .item {
+    border: 2px solid $text;
+    border-radius: 10em;
+    padding: 10px 50px;
+    margin-right: 30px;
+  }
 }

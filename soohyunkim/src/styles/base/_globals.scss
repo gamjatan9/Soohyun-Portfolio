@@ -7,13 +7,19 @@ body {
   position: fixed;
   width: 20px;
   height: 20px;
-  background-color: black;
+  background-color: $background;
+  border: 3px solid $text;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  pointer-events: none; /* 클릭 이벤트 방해 방지 */
-  z-index: 1000;
+  pointer-events: none;
+  z-index: 10;
 }
 
-.pointer:hover .cursor {
-  background-color: red; /* .pointer 요소 위에서 커서 색상 변경 */
+// .pointer:hover .cursor {
+//   background-color: red;
+// }
+
+.not-found {
+  @include center-fixed;
+  font-size: 30px;
 }

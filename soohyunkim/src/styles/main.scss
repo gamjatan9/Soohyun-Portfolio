@@ -1,6 +1,9 @@
 @import './constants/typography';
 @import './constants/colors';
 
+@import './mixins/center-fixed';
+@import './mixins/flexbox';
+
 @import './base/fonts';
 @import './base/normalize';
 @import './base/resets';
@@ -8,11 +11,11 @@
 
 @import './layouts/grids';
 
-@import './mixins/center-fixed';
-@import './mixins/flexbox';
-
-@import './pages/home';
-@import './pages/contact';
-
 @import './components/menu';
 @import './components/transitions';
+@import './components/side-modal';
+
+@import './pages/home';
+@import './pages/about';
+@import './pages/projects';
+@import './pages/contact';
