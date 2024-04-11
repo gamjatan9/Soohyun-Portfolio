@@ -1,4 +1,4 @@
 import Purple from './purple.png';
-import Me from './me.jpg';
+import Profile from './me.jpg';
 
-export { Purple, Me };
+export { Purple, Profile };
