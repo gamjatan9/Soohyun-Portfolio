@@ -16,7 +16,7 @@ const menuLinks = [
 export default function Menu() {
   const container = useRef<HTMLDivElement>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const tl = useRef(null);
+  const tl = useRef<any>(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
