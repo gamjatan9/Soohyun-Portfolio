@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import { MenuBtn } from '../../public/svgs';
+import { MenuBtn, MenuBtnL } from '../../../public/svgs';
 import Link from 'next/link';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -29,7 +29,7 @@ export default function Menu() {
       tl.current = gsap
         .timeline({ paused: true })
         .to('.menu-overlay', {
-          duration: 1.25,
+          duration: 1.3,
           clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
           ease: 'power4.inOut',
         })
@@ -60,7 +60,7 @@ export default function Menu() {
           <p>Portfolio 2024</p>
         </div>
         <button className="menu-btn">
-          <MenuBtn onClick={toggleMenu} />
+          <MenuBtn onClick={toggleMenu} className="pointer" />
         </button>
       </div>
       <div className="menu-overlay">
@@ -69,8 +69,8 @@ export default function Menu() {
             <p>SoohyunKim Frontend</p>
             <p>Portfolio 2024</p>
           </Link>
-          <button className="menu-close-icon" onClick={toggleMenu}>
-            X
+          <button className="menu-close-icon">
+            <MenuBtnL onClick={toggleMenu} className="pointer" />
           </button>
         </div>
         <div className="menu-links">
