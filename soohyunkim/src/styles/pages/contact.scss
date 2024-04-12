@@ -28,7 +28,7 @@
   .more {
     display: flex;
     justify-content: center;
-    margin-top: 23vh;
+    margin-top: 23dvh;
   }
 
   .item {
@@ -42,6 +42,7 @@
     justify-content: center;
     align-items: center;
     width: 15vw;
+    height: 50px;
     white-space: nowrap;
     cursor: pointer;
 
@@ -58,11 +59,11 @@
       background-color: $text;
       color: $background;
 
-      .phone-text {
+      .text {
         visibility: hidden;
       }
 
-      .phone-number {
+      .text-hover {
         visibility: visible;
         left: 50%;
         transform: translateX(-50%);

@@ -9,11 +9,21 @@ export default function Contact() {
           <div className="item">
             <span className="text">PHONE</span>
             <a href="tel:010-0000-0000" className="text-hover">
-              010-0000-0000
+              010-4160-7656
             </a>
           </div>
-          <div className="item">GITHUB</div>
-          <div className="item">BLOG</div>
+          <div className="item">
+            <span className="text">GITHUB</span>
+            <a href="https://github.com/gamjatan9" className="text-hover">
+              github.com/gamjatan9
+            </a>
+          </div>
+          <div className="item">
+            <span className="text">BLOG</span>
+            <a href="https://mystory-soo.tistory.com/" className="text-hover">
+              mystory-soo.tistory.com
+            </a>
+          </div>
         </div>
       </div>
     </div>
