@@ -8,9 +8,7 @@ export default function ProjectCard({ title, date, itemContent }: Project) {
         <div className="title">{title}</div>
         <div className="date">{date}</div>
       </div>
-      <Link href="/project/card">
-        <div>{itemContent}</div>
-      </Link>
+      <div>{itemContent}</div>
     </div>
   );
 }

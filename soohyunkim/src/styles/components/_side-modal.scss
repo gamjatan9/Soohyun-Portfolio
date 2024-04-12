@@ -14,12 +14,10 @@
   right: 0;
   width: 60vw;
   height: 100vh;
-  background-color: $blue;
+  background-color: $text;
+  color: $background;
 
   display: flex;
   flex-direction: column;
   z-index: 1;
-
-  .close {
-  }
 }

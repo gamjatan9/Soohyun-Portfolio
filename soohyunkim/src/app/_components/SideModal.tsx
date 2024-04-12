@@ -7,12 +7,7 @@ export default function SideModal({ children }: { children: React.ReactNode }) {
   return (
     <>
       <div className="side-modal-overlay" onClick={() => router.back()} />
-      <div className="side-modal">
-        <button className="close" onClick={() => router.back()}>
-          X
-        </button>
-        {children}
-      </div>
+      <div className="side-modal">{children}</div>
     </>
   );
 }

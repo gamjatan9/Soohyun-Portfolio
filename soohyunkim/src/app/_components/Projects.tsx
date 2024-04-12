@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import ProjectCard from '@/app/_components/ProjectCard';
 import { AllerGenie, Portfolio, SchoolLog } from '../../../public/svgs';
+import Link from 'next/link';
 
 export default function Projects() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -25,12 +26,20 @@ export default function Projects() {
     {
       title: 'Portfolio',
       date: '2024.03',
-      itemContent: <Portfolio className="item" />,
+      itemContent: (
+        <Link href="/project/portfolio">
+          <Portfolio className="item" />
+        </Link>
+      ),
     },
     {
       title: 'SchoolLog',
       date: '2023.03-2023.10',
-      itemContent: <SchoolLog className="item" />,
+      itemContent: (
+        <Link href="/project/schoollog">
+          <SchoolLog className="item" />
+        </Link>
+      ),
     },
     {
       title: 'AllerGenie',
