@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import ProjectCard from '@/app/_components/ProjectCard';
 import { Portfolio, SchoolLog } from '../../../public/svgs';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Projects() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -45,10 +46,12 @@ export default function Projects() {
       title: 'AllerGenie',
       date: '2023.11',
       itemContent: (
-        <img
-          src="../../images/allergenie.png"
+        <Image
+          src="/images/allergenie.png" // 절대 경로 사용
           alt="AllerGenie"
           className="item"
+          width={500} // 적절한 값으로 설정
+          height={300} // 적절한 값으로 설정
         />
       ),
     },
