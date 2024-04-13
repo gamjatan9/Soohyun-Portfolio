@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import ProjectCard from '@/app/_components/ProjectCard';
-import { AllerGenie, Portfolio, SchoolLog } from '../../../public/svgs';
+import { Portfolio, SchoolLog } from '../../../public/svgs';
 import Link from 'next/link';
 
 export default function Projects() {
@@ -44,7 +44,13 @@ export default function Projects() {
     {
       title: 'AllerGenie',
       date: '2023.11',
-      itemContent: <AllerGenie className="item" />,
+      itemContent: (
+        <img
+          src="../../images/allergenie.png"
+          alt="AllerGenie"
+          className="item"
+        />
+      ),
     },
   ];
 
